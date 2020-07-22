@@ -10,8 +10,10 @@
     />
     <div class="aplayer-time">
       <div class="aplayer-time-inner">
-        - <span class="aplayer-ptime">{{secondToTime(stat.playedTime)}}</span> / <span
-        class="aplayer-dtime">{{secondToTime(stat.duration)}}</span>
+        <span class="aplayer-separator"> - </span>
+        <span class="aplayer-ptime">{{secondToTime(stat.playedTime)}}</span>
+        <span class="aplayer-time-separator"> / </span>
+        <span class="aplayer-dtime">{{secondToTime(stat.duration)}}</span>
       </div>
       <volume
         v-if="!$parent.isMobile"
